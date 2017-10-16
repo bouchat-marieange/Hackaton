@@ -11,3 +11,5 @@ cookieElement.onclick=function () {
 setInvertval(function () {
   scoreTotal=scoreTotal+(1*multiplicateurTombe);
 },1000)
+
+// Création de la liste des objets bonus

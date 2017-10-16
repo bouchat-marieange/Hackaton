@@ -1,21 +1,19 @@
 #container
 {
   width: 100%;
-  height: 100%;
   margin:auto;
-  /*background-color: red;*/
-}
-
-#container:active
-{
-  width: 60%;
-  margin-top:60px;
-  /*background-color: green;*/
 }
 
 #cookie
 {
-  display:block;
-  width: 50%;
+  display: block;
+  width: 250px;
   margin : auto;
+  margin-top: 60px;
+}
+
+/*Aggrandit légèrement la taille du cookie lorsque l'on clique dessus*/
+#cookie:active
+{
+  width: 260px;
 }
