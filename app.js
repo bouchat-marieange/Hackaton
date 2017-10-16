@@ -3,7 +3,8 @@ var multiplicateurClick=1;
 var multiplicateurTombe=1;
 
 
-document.getElementById("cookie").onclick=function () {
+var cookieElement=document.getElementById("cookie");
+cookieElement.onclick=function () {
   scoreTotal=scoreTotal+(1*multiplicateurClick);
 }
 
