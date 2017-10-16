@@ -3,12 +3,15 @@ var multiplicateurClick=1;
 var multiplicateurTombe=1;
 
 
+var cookieElement;
+
 var cookieElement=document.getElementById("cookie");
 cookieElement.onclick=function () {
   scoreTotal=scoreTotal+(1*multiplicateurClick);
+  console.log(scoreTotal);
 }
 
-setInvertval(function () {
+setInterval(function () {
   scoreTotal=scoreTotal+(1*multiplicateurTombe);
 },1000)
 
