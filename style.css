@@ -25,7 +25,9 @@ body{
 }
 
 #cookie:active{
-	position:absolute;
+	width: 275px;
+	margin : auto;
+	margin-top: 55px;
 }
 #cote-gauche-cookie{
   width: 80%;
