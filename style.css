@@ -12,8 +12,8 @@ background-color:gray;
 {
   display: block;
   width: 250px;
-  margin : auto;
-  margin-top: 60px;
+  margin-left : 50px;
+  margin-top: 100px;
 }
 
 /*Aggrandit légèrement la taille du cookie lorsque l'on clique dessus*/
@@ -22,18 +22,19 @@ background-color:gray;
   width: 260px;
 }
 
-
-
 #scoreTotal{
 	background:url(image/petit-cookie.png) no-repeat;
+  background-size: 40px;
+  background-position: 0.8em 0.3em;
 	background-color:white;
-	border-radius:10%;
+	border-radius:10px;
 	position:absolute;
-	left:0px;
-	top: 0px;
+	left:20px;
+	top: 20px;
 	padding: 2px;
 	height:50px;
-	width:200px;
-	font-color:black;
-	font-size:20px; 
+	width:300px;
+	color:black;
+	font-size:20px;
+  font-family: 'Roboto', sans-serif;
 }
