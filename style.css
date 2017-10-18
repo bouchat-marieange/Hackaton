@@ -1,5 +1,6 @@
 body{
 	background-image: url(image/papier_peint.jpg);
+	color:#FFFFFF;
 }
 
 #container{
@@ -26,21 +27,13 @@ body{
 #cookie:active{
 	position:absolute;
 }
-<<<<<<< HEAD
 #cote-gauche-cookie{
   width: 80%;
+	display: inline-block;
+	float: left;
 }
 #cote-droit-shop{
   width:20%;
+	display: inline-block;
+	float: left;
 }
-=======
-
-#cote-gauche-cookie{
-	
-}
-
-#cote-droit-shop{
-	
-}
-
->>>>>>> 9fc0ab4469a498d02cfc79dbe8f132113f8236e8
