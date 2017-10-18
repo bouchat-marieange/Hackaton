@@ -16,3 +16,15 @@ setInterval(function () {
 },1000)
 
 // Création de la liste des objets bonus
+
+
+
+
+//Fonction nb_cookies
+
+scoreTotal = function(multiplicateurTombe,multiplicateurClick){
+	
+	scoreTotal=document.getElementsById(scoreTotal+multiplicateurTombe+multiplicateurClick);
+	return scoreTotal;
+} 
+

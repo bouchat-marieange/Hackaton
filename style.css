@@ -1,3 +1,7 @@
+body{
+background-color:gray;
+
+}
 #container
 {
   width: 100%;
@@ -16,4 +20,20 @@
 #cookie:active
 {
   width: 260px;
+}
+
+
+
+#scoreTotal{
+	background:url(image/petit-cookie.png) no-repeat;
+	background-color:white;
+	border-radius:10%;
+	position:absolute;
+	left:0px;
+	top: 0px;
+	padding: 2px;
+	height:50px;
+	width:200px;
+	font-color:black;
+	font-size:20px; 
 }
