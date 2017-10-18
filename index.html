@@ -16,7 +16,8 @@
       <h2 id="cookieTombes">101010//sec</h2>
     </div>
     <div id="cote-gauche-cookie">
-      <img id="cookie" src="image/cookie.png" alt="coockie">
+     
+      <img id="cookie" src="image/cookie.png" alt="cookie" onclick="javascript: clicks();" style="cursor pointer;">
       <div class="multi">+1</div>
     </div>
     <div id="cote-droit-shop">
@@ -28,6 +29,12 @@
   </div>
 
   <script src="app.js" charset="utf-8"></script>
-
+	<script type="text/javascript">
+		int clicks = 0;
+		function click() {
+			clicks += 1;
+			document.getElementById("clicks").innerHTML = clicks;
+		};
+	</script>
 </body>
 </html>
