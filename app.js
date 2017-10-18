@@ -16,7 +16,3 @@ setInterval(function () {
 },1000)
 
 // Création de la liste des objets bonus
-
-
-
-
