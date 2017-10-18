@@ -6,104 +6,107 @@ Hackaton - Cookies
 \\Accès au jeu cookie-clikeur via interface web
 
 __DEBUT__
-	\\Incitation textuelle à ce que l'utilisateur clique sur le cookie
+\\Incitation textuelle à ce que l'utilisateur clique sur le cookie
 
-	\\Animation cookie
+\\Animation cookie
 
-	__SI__ l'utlisateur passe la souris sur le cookie 
+__SI__ l'utlisateur passe la souris sur le cookie 
 
-		Agrandissement du cookie
+1. Agrandissement du cookie
 
-	__SINON__
+__SINON__
 
-		Rien ne se passe
+1. Rien ne se passe
 
-	__FINSI__
-	
+__FINSI__
 
-	__SI__ l'utilisateur clique sur le cookie
+__SI__ l'utilisateur clique sur le cookie
 		
-		\\Fonction multiplicateurClik
+\\Fonction multiplicateurClik
 
-		\\Animation cookie
+\\Animation cookie
 
-		Agrandissement du cookie au clic
+1. Agrandissement du cookie au clic
 
-		Affichage animation +nbr de cookie gagné
+2. Affichage animation +nbr de cookie gagné
 
-		Affichage du nouveau scoreTotal
+3. Affichage du nouveau scoreTotal
 
-		Ajout de +nbr de cookie gagné au scoreTotal
+4. Ajout de +nbr de cookie gagné au scoreTotal
 
-	__SINON__
+__SINON__
 
-		__SI__ l'utilisateur à un bonus par seconde actif
+__SI__ l'utilisateur à un bonus par seconde actif
 			
-			ajout de bonus par seconde au scoreTotal
-		__FINSI__
+1. ajout de bonus par seconde au scoreTotal
+
+__FINSI__
 		
-		rien ne se passe jusqu'au prochain clic
+1. rien ne se passe jusqu'au prochain clic
 
-		rien ne se passe sans achat de bonus par seconde
-	__FINSI__
+2. rien ne se passe sans achat de bonus par seconde
 
-	\\Fonction multiplicateurTombe
+__FINSI__
 
-	__SI__ l'utilisateur à un ou plusieurs bonus actif
+\\Fonction multiplicateurTombe
 
-		incrément automatique chaque seconde du scoreTotal
+__SI__ l'utilisateur à un ou plusieurs bonus actif
 
-		affichage chaque seconde du nouveau scoreTotal
+1. incrément automatique chaque seconde du scoreTotal
+
+2. affichage chaque seconde du nouveau scoreTotal
 	
-	__SINON__
+__SINON__
 
-		rien ne se passe
-	__FINSI__
+1. rien ne se passe
 
-	\\Fonction achat-objet
+__FINSI__
 
-	\\Animation CSS
+\\Fonction achat-objet
 
-	__SI__ l'utilisateur a gagné assez de cookie
+\\Animation CSS
+
+__SI__ l'utilisateur a gagné assez de cookie
 		
-		surbrillance des objets bonus dans le store
+1. surbrillance des objets bonus dans le store
 	
-	__SINON__
+__SINON__
 		
-		objets restent grisés
+1. objets restent grisés
 
-	__FINSI__
+__FINSI__
 
-	__SI__ l'utilisateur clique pour acheter un objet bonus
+__SI__ l'utilisateur clique pour acheter un objet bonus
 
-		Déduction du prix du bonus dans le scoreTotal
+1. Déduction du prix du bonus dans le scoreTotal
 
-		Addition aux eventuels bonus déjà actifs
+2. Addition aux eventuels bonus déjà actifs
 
-		Affichage du nombre de bonus achetés/actifs dans le store
+3. Affichage du nombre de bonus achetés/actifs dans le store
 
-		Affichage du nouveau score de multiplicateurTombe
+4. Affichage du nouveau score de multiplicateurTombe
 		
-		Incrément par seconde au scoreTotal
+5. Incrément par seconde au scoreTotal
 	
-	__SINON__
+__SINON__
 
-		rien ne se passe
+1. rien ne se passe
 	
-	__FINSI__
+__FINSI__
 
-	__SI__ l'utilisateur a acheté un bonus
+__SI__ l'utilisateur a acheté un bonus
 		
-		__SI__ l'utilisateur a encore assez de cookies pour acheter un autre
+__SI__ l'utilisateur a encore assez de cookies pour acheter un autre
 
-		L'objet reste en surbrillance
+1. L'objet reste en surbrillance
 
-		__SINON__ 
+__SINON__ 
 
-		il devient grisé
+1. il devient grisé
 
-		__FINSI__
-	__FINSI__
+__FINSI__
+
+__FINSI__
 
 		
 
