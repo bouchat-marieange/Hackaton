@@ -20,11 +20,3 @@ setInterval(function () {
 
 
 
-//Fonction nb_cookies
-
-scoreTotal = function(multiplicateurTombe,multiplicateurClick){
-	
-	scoreTotal=document.getElementsById(scoreTotal+multiplicateurTombe+multiplicateurClick);
-	return scoreTotal;
-} 
-
