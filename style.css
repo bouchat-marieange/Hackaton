@@ -1,25 +1,46 @@
-#container
-{
-  width: 100%;
-  margin:auto;
+body{
+	background-image: url(image/papier_peint.jpg);
 }
 
-#cookie
-{
+#container{
+  width: 100%;
+  margin: auto;
+}
+
+#cookie{
   display: block;
   width: 250px;
   margin : auto;
   margin-top: 60px;
 }
 
-/*Aggrandit légèrement la taille du cookie lorsque l'on clique dessus*/
-#cookie:active
-{
-  width: 260px;
+.scores{
+	color: aliceblue;
 }
+
+/*Aggrandit légèrement la taille du cookie lorsque l'on clique dessus*/
+#cookie:hover{
+	width: 260px;
+}
+
+#cookie:active{
+	position:absolute;
+}
+<<<<<<< HEAD
 #cote-gauche-cookie{
   width: 80%;
 }
 #cote-droit-shop{
   width:20%;
 }
+=======
+
+#cote-gauche-cookie{
+	
+}
+
+#cote-droit-shop{
+	
+}
+
+>>>>>>> 9fc0ab4469a498d02cfc79dbe8f132113f8236e8
