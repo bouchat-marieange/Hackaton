@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var scoreTotal=0;
 var multiplicateurClick=1;
 var multiplicateurTombe=1;
@@ -59,3 +60,23 @@ function affiche_score()
 
 
 // Création de la liste des objets bonus
+=======
+var scoreTotal=0;
+var multiplicateurClick=1;
+var multiplicateurTombe=1;
+
+
+var cookieElement;
+
+var cookieElement=document.getElementById("cookie");
+cookieElement.onclick=function () {
+  scoreTotal=scoreTotal+(1*multiplicateurClick);
+  console.log(scoreTotal);
+}
+
+setInterval(function () {
+  scoreTotal=scoreTotal+(1*multiplicateurTombe);
+},1000)
+
+// Création de la liste des objets bonus
+>>>>>>> d0a3b550a245624cf4ca9ff84bed4122c99abbb3
