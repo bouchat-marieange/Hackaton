@@ -16,9 +16,9 @@ background-color:gray;
   margin-top: 100px;
 }
 
-.scores{
+/*.scores{
 	color: aliceblue;
-}
+}*/
 
 /*Aggrandit légèrement la taille du cookie lorsque l'on clique dessus*/
 #cookie:hover{
@@ -30,7 +30,7 @@ background-color:gray;
 	margin : auto;
 	margin-top: 55px;
 }
-#cote-gauche-cookie{
+/*#cote-gauche-cookie{
   width: 80%;
 	display: inline-block;
 	float: left;
@@ -39,7 +39,7 @@ background-color:gray;
   width:20%;
 	display: inline-block;
 	float: left;
-}
+}*/
 
 #scoreTotal{
 	background:url(image/petit-cookie.png) no-repeat;
