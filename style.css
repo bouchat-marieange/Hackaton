@@ -1,3 +1,4 @@
+
 body{
 background-color:gray;
 color:black;
@@ -55,22 +56,21 @@ p
   padding: 2px;
   height:50px;
   width:300px;
+  /*display:flex;
+  flex-direction: row;
+  justify-content: */
 }
 
 #scoreTotal
 {
-
-	/*background:url(image/petit-cookie.png) no-repeat;
-  background-size: 40px;
-  background-position: 0.8em 0.3em;
-	background-color:white;
-	border-radius:10px;
-	position:absolute;
-	left:20px;
-	top: 20px;
-	padding: 2px;
-	height:50px;
-	width:300px;*/
+  width: 200px;
+  height: 30px;
+  float:right;
+  text-align: right;
+  margin-right: 20px;
+  padding-top: 4px;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 #cookie
@@ -91,11 +91,12 @@ p
 {
   background-color: #fff;
   width: 400px;
-  height: 50px;
+  height: 40px;
   /*margin-bottom: 20px;*/
   display: flex;
   direction: row;
   justify-content: space-around;
+  padding-top: 2px;
 }
 
 .prixBonus
@@ -103,12 +104,14 @@ p
   /*background: purple;*/
   width: 50px;
   height: 50px;
+  font-size: 1em;
 }
 
 #cursor, #grandma, #farm, #mine, #factory
 {
   /*background-color: yellow;*/
   margin-bottom: 20px;
+  font-size: 1.8em;
 }
 
 #prixCursor, #prixGrandma, #prixFarm, #prixMine, #prixFactory
