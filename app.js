@@ -59,3 +59,42 @@ function affiche_score()
 
 
 // Création de la liste des objets bonus
+
+
+//Pour identifier chaque objet , on les met dans un plus grand objets ou on les associatie avec leur id
+store={
+  item1:{
+    nom:"iterm1",
+    prix:10,
+    utilisations:0,
+    cookie_click:0,
+    cookie_tombe:1
+  },
+  item2:{
+    nom:"iterm2",
+    prix:10,
+    utilisations:0,
+    cookie_click:2,
+    cookie_tombe:0
+  }
+}
+
+//On selectionne les différents object pour gérer les clicks
+//Quand objet clické , on envoie l'id de l'objet à la fonction "achat_objet" avec l'id de objet en argument
+var toutElements=document.getElementsByClassName();
+for (var i = 0; i < toutElements.length; i++) {
+  toutElements[i].addEventListener("click",function (event) {
+    achat_objet("item");
+  });
+}
+
+function achat_objet(id_objet) {
+  multiplicateurClick=multiplicateurClick+store[id_objet].cookie_click;
+  multiplicateurTombe=multiplicateurTombe+store[id_objet].cookie_tombe;
+  store[id_objet].utilisations++;
+  store[id_objet].prix=store[id_objet].utilisations*store[id_objet].prix;
+  afficher_Objet(id_objet);
+}
+function afficher_Objet(id_element) {
+
+}
