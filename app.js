@@ -59,3 +59,72 @@ function affiche_score()
 
 
 // Création de la liste des objets bonus
+
+
+//Pour identifier chaque objet , on les met dans un plus grand objets ou on les associatie avec leur id
+store={
+  cursor:{
+    nom:"iterm1",
+    prix:10,
+    utilisations:0,
+    cookie_click:0,
+    cookie_tombe:1
+  },
+  grandma:{
+    nom:"iterm2",
+    prix:10,
+    utilisations:0,
+    cookie_click:2,
+    cookie_tombe:0
+  },
+  farm:{
+    nom:"iterm2",
+    prix:10,
+    utilisations:0,
+    cookie_click:2,
+    cookie_tombe:0
+  },
+  mine:{
+    nom:"iterm2",
+    prix:10,
+    utilisations:0,
+    cookie_click:2,
+    cookie_tombe:0
+  },
+  factory:{
+    nom:"iterm2",
+    prix:10,
+    utilisations:0,
+    cookie_click:2,
+    cookie_tombe:0
+  }
+}
+
+//On selectionne les différents object pour gérer les clicks
+//Quand objet clické , on envoie l'id de l'objet à la fonction "achat_objet" avec l'id de objet en argument
+var toutElements=document.getElementsByClassName("bonus");
+for (var i = 0; i < toutElements.length; i++) {
+  toutElements[i].addEventListener("click",function (event) {
+    console.log(this.id);
+    achat_objet(this.id);
+  });
+}
+
+function achat_objet(id_objet) {
+  if (store[id_objet].prix <= scoreTotal) {
+    scoreTotal=scoreTotal-store[id_objet].prix;
+    multiplicateurClick=multiplicateurClick+store[id_objet].cookie_click;
+    multiplicateurTombe=multiplicateurTombe+store[id_objet].cookie_tombe;
+    store[id_objet].utilisations++;
+    store[id_objet].prix=store[id_objet].utilisations*store[id_objet].prix;
+    afficher_Objet(id_objet,true);
+  }
+
+}
+function afficher_Objet(id_element,payable) {
+  var item =document.querySelector("#"+id_element+"  .prix")
+  item.innerHTML=store[id_element].prix;
+  if (true) {
+
+  }
+}
