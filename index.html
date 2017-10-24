@@ -9,13 +9,56 @@
     <title>Jeu Cookies</title>
   </head>
   <body>
+  <div id="container">
 
-    <div id="container">
-      <img id="cookie" src="image/cookie.png" alt="cookie">
+    <div id="gauche">
+      <div id="affichageScore">
+        <div id="scoreTotal"></div>
+        <img id="cookie" src="image/cookie.png" alt="cookie">
+      </div>
     </div>
 
-    <div id="scoreTotal"></div>
+    <div id="droite">
+      <div id="cursor" class="bonus">
+        <p>Cursor</p>
+        <p id="prixCursor" class="prixBonus">5</p>
+      </div>
 
+      <!-- <div class="clear"></div> -->
+
+      <div id="grandma" class="bonus">
+        <p>Grand Ma</p>
+        <p id="prixGrandma" class="prixBonus">10</p>
+      </div>
+
+      <!-- <div class="clear"></div> -->
+
+      <div id="farm" class="bonus">
+        <p>Farm</p>
+        <p id="prixFarm" class="prixBonus">15</p>
+      </div>
+
+      <!-- <div class="clear"></div> -->
+
+      <div id="mine" class="bonus">
+        <p>Mine</p>
+        <p id="prixMine" class="prixBonus">20</p>
+      </div>
+
+      <!-- <div class="clear"></div> -->
+
+      <div id="factory" class="bonus">
+        <p>Factory</p>
+        <p id="prixFactory" class="prixBonus">25</p>
+      </div>
+
+      <!-- <div class="clear"></div> -->
+
+    </div>
+
+
+
+  </div>
     <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
