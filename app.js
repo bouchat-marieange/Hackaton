@@ -126,6 +126,7 @@ function achat_objet(id_objet) {
 }
 function afficher_Objet(id_element,payable) {
   var item =document.querySelector("#"+id_element+"  .prix")
+  affiche_score();
   item.innerHTML=store[id_element].prix;
   if (!payable) {
     alert("Trop cher pour vous !")
