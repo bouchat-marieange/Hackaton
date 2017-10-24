@@ -65,7 +65,7 @@ function affiche_score()
 store={
   cursor:{
     nom:"iterm1",
-    prix:10,
+    prix:5,
     utilisations:0,
     cookie_click:0,
     cookie_tombe:1
@@ -79,21 +79,21 @@ store={
   },
   farm:{
     nom:"iterm2",
-    prix:10,
+    prix:15,
     utilisations:0,
     cookie_click:2,
     cookie_tombe:0
   },
   mine:{
     nom:"iterm2",
-    prix:10,
+    prix:20,
     utilisations:0,
     cookie_click:2,
     cookie_tombe:0
   },
   factory:{
     nom:"iterm2",
-    prix:10,
+    prix:25,
     utilisations:0,
     cookie_click:2,
     cookie_tombe:0
