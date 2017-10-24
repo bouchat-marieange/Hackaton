@@ -96,5 +96,7 @@ function achat_objet(id_objet) {
   afficher_Objet(id_objet);
 }
 function afficher_Objet(id_element) {
+  var item =document.querySelector("#"+id_element)
+  item.innerHTML=store[id_element].prix;
 
 }
