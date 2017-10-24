@@ -111,6 +111,7 @@ for (var i = 0; i < toutElements.length; i++) {
 }
 
 function achat_objet(id_objet) {
+  console.log(store[id_objet]);
   if (store[id_objet].prix <= scoreTotal) {
     scoreTotal=scoreTotal-store[id_objet].prix;
     multiplicateurClick=multiplicateurClick+store[id_objet].cookie_click;
@@ -118,6 +119,8 @@ function achat_objet(id_objet) {
     store[id_objet].utilisations++;
     store[id_objet].prix=store[id_objet].utilisations*store[id_objet].prix;
     afficher_Objet(id_objet,true);
+  }else {
+    afficher_Objet(id_objet,false);
   }
 
 }
